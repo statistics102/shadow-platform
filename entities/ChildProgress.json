@@ -1,0 +1,66 @@
+{
+  "name": "ChildProgress",
+  "type": "object",
+  "properties": {
+    "child_profile_id": {
+      "type": "string",
+      "description": "\u0645\u0639\u0631\u0641 \u0645\u0644\u0641 \u0627\u0644\u0637\u0641\u0644"
+    },
+    "session_id": {
+      "type": "string",
+      "description": "\u0645\u0639\u0631\u0641 \u0627\u0644\u062c\u0644\u0633\u0629"
+    },
+    "session_date": {
+      "type": "string",
+      "format": "date",
+      "description": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062c\u0644\u0633\u0629"
+    },
+    "specialist_name": {
+      "type": "string",
+      "description": "\u0627\u0633\u0645 \u0627\u0644\u0645\u062a\u062e\u0635\u0635"
+    },
+    "skill_scores": {
+      "type": "object",
+      "description": "\u062f\u0631\u062c\u0627\u062a \u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a (communication, social, motor, academic, life, emotional)",
+      "properties": {
+        "communication": {
+          "type": "number"
+        },
+        "social": {
+          "type": "number"
+        },
+        "motor": {
+          "type": "number"
+        },
+        "academic": {
+          "type": "number"
+        },
+        "life": {
+          "type": "number"
+        },
+        "emotional": {
+          "type": "number"
+        }
+      }
+    },
+    "overall_score": {
+      "type": "number",
+      "description": "\u0627\u0644\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0639\u0627\u0645 \u0645\u0646 100"
+    },
+    "notes": {
+      "type": "string",
+      "description": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0645\u062a\u062e\u0635\u0635"
+    },
+    "goals_achieved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "\u0627\u0644\u0623\u0647\u062f\u0627\u0641 \u0627\u0644\u0645\u062d\u0642\u0642\u0629"
+    }
+  },
+  "required": [
+    "child_profile_id",
+    "session_date"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Specialist",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "\u0627\u0633\u0645 \u0627\u0644\u0645\u062a\u062e\u0635\u0635"
+    },
+    "specialty": {
+      "type": "string",
+      "enum": [
+        "speech_therapy",
+        "occupational_therapy",
+        "behavioral_therapy",
+        "physical_therapy",
+        "psychological",
+        "educational"
+      ],
+      "description": "\u0627\u0644\u062a\u062e\u0635\u0635"
+    },
+    "bio": {
+      "type": "string",
+      "description": "\u0646\u0628\u0630\u0629 \u0642\u0635\u064a\u0631\u0629"
+    },
+    "image": {
+      "type": "string",
+      "description": "\u0635\u0648\u0631\u0629 \u0627\u0644\u0645\u062a\u062e\u0635\u0635"
+    },
+    "experience_years": {
+      "type": "number",
+      "description": "\u0633\u0646\u0648\u0627\u062a \u0627\u0644\u062e\u0628\u0631\u0629"
+    },
+    "rating": {
+      "type": "number",
+      "description": "\u0627\u0644\u062a\u0642\u064a\u064a\u0645 \u0645\u0646 5"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true,
+      "description": "\u0645\u062a\u0627\u062d \u0644\u0644\u062d\u062c\u0632"
+    }
+  },
+  "required": [
+    "name",
+    "specialty"
+  ]
+}
